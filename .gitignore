@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+
+# 155 MB local environment, rebuildable from uv.lock
+.venv/
+
+# Local model/asset cache
+.cache/
+
+# Generated audio/video is large and regenerable; keep the pipeline, not the output
+outputs/*.mp3
+outputs/*.mp4
+outputs/*.wav

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-to-mp4"
+version = "0.1.0"
+description = "Fetch AI papers, summarize paragraphs in Chinese, and render text plus audio/video outputs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "edge-tts>=7.0",
+  "imageio[ffmpeg]>=2.34",
+  "numpy>=1.26",
+  "pillow>=10.0",
+  "pypdf>=4.0",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.109"]
+
+[project.scripts]
+paper-to-mp4 = "paper_to_mp4.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
