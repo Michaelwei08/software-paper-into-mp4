@@ -7,7 +7,7 @@
 - Open questions: None.
 
 ## Invariants / Constraints
-- 2026-04-29 [USER]: Workspace is `D:\Stanford\research\own\software_paper_into_mp4`.
+- 2026-04-29 [USER]: Workspace is `<WORKSPACE>/software_paper_into_mp4`.
 - 2026-04-29 [USER]: Preserve small, safe, modular changes; avoid files over 300 lines of code.
 - 2026-04-29 [USER]: No host system package installs unless explicitly instructed.
 
@@ -71,7 +71,7 @@
 - 2026-04-29 [TOOL]: `irm https://ollama.com/install.ps1 | iex` -> install complete.
 - 2026-04-29 [TOOL]: `& "$env:LOCALAPPDATA\Programs\Ollama\ollama.exe" --version` -> `ollama version is 0.22.0`.
 - 2026-04-29 [TOOL]: `curl.exe -sS http://localhost:11434/api/version` -> `{"version":"0.22.0"}`.
-- 2026-04-29 [TOOL]: `& "C:\Users\chupe\AppData\Local\Programs\Ollama\ollama.exe" pull qwen2.5:7b-instruct` -> success.
+- 2026-04-29 [TOOL]: `& "<HOME>\AppData\Local\Programs\Ollama\ollama.exe" pull qwen2.5:7b-instruct` -> success.
 - 2026-04-29 [TOOL]: `uv run paper-to-mp4 --url "https://arxiv.org/abs/2509.04664"` -> success; wrote Markdown and MP4.
 - 2026-04-29 [TOOL]: `Get-ChildItem outputs` -> Markdown 14,539 bytes; MP4 461,010 bytes.
 - 2026-04-29 [TOOL]: `python -m compileall src` -> passed after MP3 changes.
